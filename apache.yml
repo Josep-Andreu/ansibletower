@@ -1,6 +1,6 @@
 ---
 - name: Main playbook
-  hosts: all
+  hosts: web
   become: true
   tasks:
   - name: Import the role
