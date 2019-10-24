@@ -1,0 +1,9 @@
+---
+# vars file for security
+service_to_enable:
+  - http
+security_packages:
+  - httpd
+  - cowsay
+  - sl
+  - nmap
