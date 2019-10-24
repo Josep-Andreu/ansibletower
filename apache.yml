@@ -30,3 +30,9 @@
   - name: Import another role
     include_role:
       name: security
+  - name: Import hardening
+    include_role:
+      name: security_hardening
+  - name: Import motd
+    include_role:
+      name: set_motd
