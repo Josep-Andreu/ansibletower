@@ -1,6 +1,6 @@
 ---
 # vars file for security
-service_to_enable:
+services_to_enable:
   - http
 security_packages:
   - httpd
