@@ -6,6 +6,10 @@
   - name: Import the role
     include_role: 
       name: install_apache
+  - name: Check if EPEL repo is already configured.
+    stat:
+      path: "/etc/yum.repos.d/epel.repo"
+    register: epel_repofile_result
   - name: Install EPEL repo.
     yum:
       name: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-{{ ansible_distribution_major_version }}.noarch.rpm"
